@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zad10</title>
+</head>
+<body>
+	<h1>Tablica: [5, 12, 17, 23, 123, 45, 54]</h1>
+	<div id="wynik"></div>
+
+	<script>
+		const liczby = [5, 12, 17, 23, 123, 45, 54];
+		console.log(liczby);
+
+		let suma = 0;
+		for (let i = 0; i < liczby.length; i++) {
+			suma += liczby[i];
+		}
+		console.log("Suma: " + suma);
+
+		window.onload = function() {
+			const wynik = document.getElementById("wynik");
+			wynik.innerHTML = "Suma: " + suma;
+		}
+	</script>
+</body>
+</html>

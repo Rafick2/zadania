@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>zad1</title>
+    <meta charset="UTF-8">
+    <script>
+      function generujLiczby() {
+        let najwieksza = -Infinity;
+        for (let i = 0; i < 100; i++) {
+
+          let liczba = Math.floor(Math.random() * 10000) + 1;
+          document.writeln(liczba);
+
+          if (liczba > najwieksza) {
+            najwieksza = liczba;
+          }
+        }
+        let wynik = najwieksza * 3;
+
+        document.writeln("Największa liczba to: " + najwieksza + "</br>");
+        document.writeln("Wynik mnożenia największej liczby przez 3 to: " + wynik);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="generujLiczby()">Generuj liczby</button>
+  </body>
+</html>

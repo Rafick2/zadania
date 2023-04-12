@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Obliczenia matematyczne</title>
+    <meta charset="UTF-8">
+    <script>
+      function obliczenia() {
+        let liczba1 = document.getElementById("liczba1");
+        let liczba2 = document.getElementById("liczba2");
+
+        let mniejsza1 = (+liczba1.value - 1);
+        let wieksza1 = (+liczba1.value + 1);
+
+        let mniejsza2 = (+liczba2.value - 1);
+        let wieksza2 = (+liczba2.value + 1)
+
+        let wynik1 = (+liczba1.value * +liczba2.value);
+
+        document.getElementById("mniejsza1").innerHTML = mniejsza1;
+        document.getElementById("wieksza1").innerHTML = wieksza1;
+        document.getElementById("mniejsza2").innerHTML = mniejsza2;
+        document.getElementById("wieksza2").innerHTML = wieksza2;
+        document.getElementById("wynik1").innerHTML = wynik1;
+      
+      }
+    </script>
+  </head>
+  <body>
+
+    <input type="number" id="liczba1" placeholder="Liczba 1">
+    <input type="number" id="liczba2" placeholder="Liczba 2">
+    <button onclick="obliczenia()">Oblicz</button>
+    
+    <p>Liczba 1 mniejsza o 1 wynosi: <span id="mniejsza1"></span></p>
+    <p>Liczba 1 większa o 1 wynosi: <span id="wieksza1"></span></p>
+    <p>Liczba 2 mniejsza o 1 wynosi: <span id="mniejsza2"></span></p>
+    <p>Liczba 2 większa o 1 wynosi: <span id="wieksza2"></span></p>
+    <p>Wynik mnozenia wynosi: <span id="wynik1"></span></p>
+  </body>
+</html>

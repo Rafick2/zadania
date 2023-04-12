@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Przypisanie wartości</title>
+</head>
+<body>
+	<label for="poleTekstowe">Wprowadź wartość:</label>
+	<input type="text" id="poleTekstowe" name="poleTekstowe">
+	<button onclick="przypiszWartosc()">Pokaz</button>
+	<div id="wynik"></div>
+
+	<script>
+		function przypiszWartosc() {
+			const poleTekstowe = document.getElementById("poleTekstowe");
+			const divWynik = document.getElementById("wynik");
+			divWynik.innerText = poleTekstowe.value;
+		}
+	</script>
+</body>
+</html>

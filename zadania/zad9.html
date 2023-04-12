@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zad9</title>
+</head>
+<body>
+	<button onclick="zmienTlo()">Zmień tło</button>
+</body>
+
+	<script>
+		const clicks = 0;
+		function zmienTlo() {
+			const body = document.getElementsByTagName("body")[0];
+			clicks++;
+			if (clicks % 2 === 1) {
+				body.style.backgroundColor = "yellow";
+			} else {
+				body.style.backgroundColor = "green";
+			}
+		}
+	</script>
+</html>

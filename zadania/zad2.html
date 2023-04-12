@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>zad2</title>
+    <meta charset="UTF-8">
+    <style>
+      #menu {
+        display: none;
+      }
+      @media screen and (max-width: 600px) {
+        #menu {
+          display: block;
+        }
+        #menu ul {
+          margin: 0;
+          padding: 0;
+        }
+        #menu li {
+          display: block;
+          margin: 0;
+          padding: 10px;
+          border-bottom: 1px solid black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button onclick="toggleMenu()">Home</button>
+      <div id="menu">
+        <ul>
+          <li><a>FIRST</a></li>
+          <li><a>SECOND</a></li>
+          <li><a>THIRD</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      function toggleMenu() {
+        let menu = document.getElementById("menu");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

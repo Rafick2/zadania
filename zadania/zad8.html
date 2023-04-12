@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ostrzeżenie</title>
+</head>
+<body>
+	<label>
+		<input type="checkbox" id="regulamin" name="regulamin" onclick="wyswietlOstrzezenie()">
+		Zaznacz, jeśli przeczytałeś/aś regulamin
+	</label>
+	<div id="warning" style="display: none;">
+		Pamiętaj! Koniecznie przeczytaj nasz regulamin!
+	</div>
+
+	<script>
+		function wyswietlOstrzezenie() {
+			const checkbox = document.getElementById("regulamin");
+			const warning = document.getElementById("warning");
+			if (checkbox.checked) {
+				warning.style.display = "block";
+			} else {
+				warning.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
